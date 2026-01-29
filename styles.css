@@ -612,7 +612,7 @@ body {
     border: none;
     box-shadow: none;
     overflow-y: auto;
-    padding-bottom: 200px;
+    padding-bottom: 80px;
   }
 
   .screen:not(.results-screen) {
@@ -661,8 +661,7 @@ body {
     transform: translateX(-50%);
     width: 90%;
     max-width: 328px;
-    top: 850px;
-    margin-bottom: 80px;
+    top: 770px;
   }
 
   .submit-button-container {
