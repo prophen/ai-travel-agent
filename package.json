@@ -1,0 +1,12 @@
+{
+  "name": "ai-travel-agent",
+  "version": "1.0.0",
+  "description": "AI Travel Agent - Plan your perfect trip",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel"
+  },
+  "dependencies": {
+    "openai": "^4.28.0"
+  }
+}

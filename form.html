@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Travel Agent - Plan Trip</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div
+        class="screen"
+        data-name="iPhone 14 & 15 Pro - 1"
+        data-node-id="13:2"
+      >
+        <!-- Number of travellers -->
+        <div class="form-field" data-node-id="13:50">
+          <p class="field-label" data-node-id="13:5">Number of travellers</p>
+          <div class="field-input travellers-input" data-node-id="13:4">
+            <button class="counter-button minus" data-node-id="13:39">
+              <img
+                src="https://www.figma.com/api/mcp/asset/8d8f2a21-ba12-4df4-bd46-0693410cd681"
+                alt=""
+                class="counter-circle"
+                data-node-id="13:40"
+              />
+              <span class="counter-symbol" data-node-id="13:41">-</span>
+            </button>
+            <div class="field-value" data-node-id="13:6">
+              <p id="travellers-count">1</p>
+            </div>
+            <button class="counter-button plus" data-node-id="13:38">
+              <img
+                src="https://www.figma.com/api/mcp/asset/8d8f2a21-ba12-4df4-bd46-0693410cd681"
+                alt=""
+                class="counter-circle"
+                data-node-id="13:9"
+              />
+              <span class="counter-symbol" data-node-id="13:7">+</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Flying from -->
+        <div class="form-field" data-node-id="13:51">
+          <p class="field-label" data-node-id="13:53">Flying from</p>
+          <div class="field-input" data-node-id="13:52">
+            <input
+              type="text"
+              class="field-value editable"
+              data-node-id="13:54"
+              id="flying-from"
+              value="New York City"
+              placeholder="Enter departure city"
+            />
+          </div>
+        </div>
+
+        <!-- Flying to -->
+        <div class="form-field" data-node-id="13:61">
+          <p class="field-label" data-node-id="13:63">Flying to</p>
+          <div class="field-input" data-node-id="13:62">
+            <input
+              type="text"
+              class="field-value editable"
+              data-node-id="13:64"
+              id="flying-to"
+              value="Paris"
+              placeholder="Enter destination"
+            />
+          </div>
+        </div>
+
+        <!-- From Date -->
+        <div class="form-field" data-node-id="13:65">
+          <p class="field-label" data-node-id="13:67">From Date</p>
+          <div class="field-input" data-node-id="13:66">
+            <input
+              type="date"
+              class="field-value editable"
+              data-node-id="13:68"
+              id="from-date"
+              value="2023-11-24"
+            />
+          </div>
+        </div>
+
+        <!-- To Date -->
+        <div class="form-field" data-node-id="13:69">
+          <p class="field-label" data-node-id="13:71">To Date</p>
+          <div class="field-input" data-node-id="13:70">
+            <input
+              type="date"
+              class="field-value editable"
+              data-node-id="13:72"
+              id="to-date"
+              value="2023-12-05"
+            />
+          </div>
+        </div>
+
+        <!-- Budget -->
+        <div class="form-field" data-node-id="13:73">
+          <p class="field-label" data-node-id="13:75">Budget</p>
+          <div class="field-input" data-node-id="13:74">
+            <input
+              type="text"
+              class="field-value editable"
+              data-node-id="13:76"
+              id="budget"
+              value="$ 5000"
+              placeholder="$ 0"
+            />
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="button-container submit-container" data-node-id="13:77">
+          <button class="submit-button" data-node-id="13:78">
+            <span class="button-text" data-node-id="13:80">Plan my Trip!</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

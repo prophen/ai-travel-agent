@@ -1,0 +1,449 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #e0e0e0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.screen {
+  position: relative;
+  width: 410px;
+  height: 844px;
+  background-color: #f2ffff;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.button-container {
+  position: absolute;
+  left: 34px;
+  top: 520px;
+}
+
+.begin-button {
+  width: 324px;
+  height: 60px;
+  background-color: #4bdcb0;
+  border: 4px solid #000000;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+  position: relative;
+}
+
+.begin-button:hover {
+  background-color: #3ecba0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(75, 220, 176, 0.4);
+}
+
+.begin-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(75, 220, 176, 0.4);
+}
+
+.button-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  font-size: 25px;
+  color: #000000;
+  text-align: center;
+  line-height: normal;
+  white-space: pre-wrap;
+}
+
+.image-container {
+  position: absolute;
+  left: 6px;
+  top: 180px;
+  width: 380px;
+  height: 380px;
+}
+
+.travel-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+/* ===== FORM PAGE STYLES ===== */
+.form-field {
+  position: absolute;
+  left: 31px;
+  width: 328px;
+}
+
+.form-field:nth-of-type(1) {
+  top: 32px;
+}
+
+.form-field:nth-of-type(2) {
+  top: 175px;
+}
+
+.form-field:nth-of-type(3) {
+  top: 277px;
+}
+
+.form-field:nth-of-type(4) {
+  top: 419px;
+}
+
+.form-field:nth-of-type(5) {
+  top: 521px;
+}
+
+.form-field:nth-of-type(6) {
+  top: 653px;
+}
+
+.field-label {
+  font-weight: bold;
+  font-size: 22px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 8px;
+  line-height: normal;
+  white-space: pre-wrap;
+}
+
+.field-input {
+  position: relative;
+  width: 324px;
+  height: 60px;
+  background-color: #f2ffff;
+  border: 4px solid #000000;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.field-value {
+  font-weight: bold;
+  font-size: 25px;
+  color: #000000;
+  text-align: center;
+  line-height: normal;
+  white-space: pre-wrap;
+}
+
+.field-value.editable {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 280px;
+  text-align: center;
+  font-family: inherit;
+}
+
+.field-value.editable:focus {
+  outline: 2px solid #4bdcb0;
+  outline-offset: -2px;
+  border-radius: 30px;
+}
+
+/* Travellers Counter */
+.travellers-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.counter-button {
+  position: relative;
+  width: 38px;
+  height: 38px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.2s ease;
+}
+
+.counter-button:hover {
+  transform: scale(1.1);
+}
+
+.counter-button:active {
+  transform: scale(0.95);
+}
+
+.counter-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.counter-symbol {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 35px;
+  color: #f2ffff;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.counter-button.minus {
+  margin-left: 3px;
+}
+
+.counter-button.plus {
+  margin-right: 3px;
+}
+
+/* Submit Button */
+.submit-container {
+  position: absolute;
+  left: 34px;
+  top: 764px;
+}
+
+.submit-button {
+  width: 324px;
+  height: 60px;
+  background-color: #4bdcb0;
+  border: 4px solid #000000;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.submit-button:hover {
+  background-color: #3ecba0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(75, 220, 176, 0.4);
+}
+
+.submit-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(75, 220, 176, 0.4);
+}
+
+/* ===== RESULTS PAGE STYLES ===== */
+.results-screen {
+  overflow-y: auto;
+}
+
+.results-title {
+  position: absolute;
+  left: 91px;
+  top: 46px;
+  font-weight: bold;
+  font-size: 48px;
+  color: #000000;
+  line-height: normal;
+  margin: 0;
+}
+
+.date-pills-container {
+  position: absolute;
+  top: 129px;
+  left: 23px;
+  display: flex;
+  gap: 20px;
+}
+
+.date-pill {
+  position: relative;
+}
+
+.pill-bg {
+  background-color: #bbf7f7;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  height: 40px;
+}
+
+.date-pill:first-child .pill-bg {
+  width: 169px;
+}
+
+.date-pill:last-child .pill-bg {
+  width: 163px;
+}
+
+.pill-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.pill-text p {
+  margin: 0;
+}
+
+.route-display {
+  position: absolute;
+  left: 24px;
+  top: 194px;
+  width: 351px;
+  height: 61px;
+  background-color: #bbf7f7;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.route-text {
+  font-weight: bold;
+  font-size: 25px;
+  color: #000000;
+  text-align: center;
+}
+
+.route-text p {
+  margin: 0;
+}
+
+.info-card {
+  position: absolute;
+  left: 23px;
+  width: 351px;
+}
+
+/* Weather card */
+.info-card[data-node-id="13:127"] {
+  top: 294px;
+}
+
+/* Flights card */
+.info-card[data-node-id="13:153"] {
+  top: 461px;
+}
+
+/* Hotel card */
+.info-card[data-node-id="13:160"] {
+  top: 677px;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 30px;
+  color: #000000;
+  text-align: center;
+  margin: 0 0 10px 0;
+  line-height: normal;
+}
+
+.card-content {
+  background-color: #bbf7f7;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 20px 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.card-content.tall {
+  min-height: 137px;
+}
+
+.card-content:not(.tall) {
+  min-height: 87px;
+}
+
+.card-text {
+  font-size: 16px;
+  color: #000000;
+  line-height: normal;
+  margin: 0;
+}
+
+.card-text p {
+  line-height: 1.4;
+  margin: 0;
+}
+
+.card-button-container {
+  margin-top: 14px;
+}
+
+.book-button {
+  width: 100%;
+  max-width: 309px;
+  height: 47px;
+  background-color: #4bdcb0;
+  border: 4px solid #000000;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+}
+
+.book-button:hover {
+  background-color: #3ecba0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(75, 220, 176, 0.4);
+}
+
+.book-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(75, 220, 176, 0.4);
+}
+
+.book-button .button-text {
+  font-size: 25px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 430px) {
+  .screen {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+  }
+}
