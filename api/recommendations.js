@@ -55,7 +55,7 @@ Keep responses concise and practical.`;
 
     // Parse the response
     const content = message.choices[0].message.content;
-    
+
     // Try to extract JSON from the response
     const jsonMatch = content.match(/\{[\s\S]*\}/);
     let recommendations;

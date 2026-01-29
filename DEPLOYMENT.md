@@ -5,6 +5,7 @@
 Your app is now configured to use **OpenAI API** with a serverless backend. The best services to deploy this are:
 
 ### 🏆 Recommended: **Vercel** (easiest)
+
 - Free tier with unlimited deployments
 - Serverless functions included
 - GitHub integration for automatic deployments
@@ -154,11 +155,13 @@ vercel logs
 ## 💰 Pricing
 
 ### OpenAI API (GPT-3.5-turbo)
+
 - ~$0.001 per 1000 tokens (very cheap)
 - Your app uses ~200-300 tokens per request
 - **Estimate**: ~$0.02 per trip plan
 
 ### Vercel
+
 - **Free tier**: 100 invocations/day for functions
 - Sufficient for most personal/small projects
 - Scales automatically if needed
@@ -169,7 +172,8 @@ vercel logs
 
 ### Issue: 401 Unauthorized from OpenAI
 
-**Solution**: 
+**Solution**:
+
 - Check API key is correctly set in Vercel environment variables
 - Make sure API key has "Read" permissions
 - Generate a new API key from https://platform.openai.com/api-keys
@@ -177,6 +181,7 @@ vercel logs
 ### Issue: Serverless function returns 500 error
 
 **Solution**:
+
 - Check Vercel logs: `vercel logs --tail`
 - Ensure `package.json` has `openai` dependency
 - Verify environment variable is set
@@ -184,6 +189,7 @@ vercel logs
 ### Issue: CORS errors
 
 **Solution**: These shouldn't happen since you're calling your own API, but if they do:
+
 - Check the fetch URL is correct: `/api/recommendations` (relative path)
 
 ---
