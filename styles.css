@@ -69,6 +69,10 @@ body {
   border-radius: 32px;
   border: 1px solid rgba(255, 255, 255, 0.6);
   box-shadow: var(--shadow-strong);
+  display: flex;
+  flex-direction: column;
+  padding: 32px 0;
+  gap: 20px;
 }
 
 .results-screen {
@@ -150,34 +154,9 @@ body {
 
 /* ===== FORM PAGE STYLES ===== */
 .form-field {
-  position: absolute;
-  left: 50%;
   width: 328px;
-  transform: translateX(-50%);
-}
-
-.form-field:nth-of-type(1) {
-  top: 32px;
-}
-
-.form-field:nth-of-type(2) {
-  top: 175px;
-}
-
-.form-field:nth-of-type(3) {
-  top: 277px;
-}
-
-.form-field:nth-of-type(4) {
-  top: 419px;
-}
-
-.form-field:nth-of-type(5) {
-  top: 521px;
-}
-
-.form-field:nth-of-type(6) {
-  top: 653px;
+  margin: 0 auto;
+  flex-shrink: 0;
 }
 
 .field-label {
@@ -289,10 +268,15 @@ body {
 
 /* Submit Button */
 .submit-container {
-  position: absolute;
-  left: 50%;
-  top: 764px;
-  transform: translateX(-50%);
+  position: static;
+  left: auto;
+  top: auto;
+  transform: none;
+  width: 328px;
+  margin: 20px auto 0;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .submit-button {
