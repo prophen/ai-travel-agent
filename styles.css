@@ -612,7 +612,7 @@ body {
     border: none;
     box-shadow: none;
     overflow-y: auto;
-    padding-bottom: 80px;
+    padding-bottom: 150px;
   }
 
   .screen:not(.results-screen) {
