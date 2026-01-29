@@ -603,11 +603,16 @@ body {
   .screen {
     width: 100vw;
     min-height: 100vh;
-    height: 100vh;
+    height: auto;
     border-radius: 0;
     border: none;
     box-shadow: none;
     overflow-y: auto;
+    padding-bottom: 100px;
+  }
+
+  .screen:not(.results-screen) {
+    min-height: 100vh;
   }
 
   .button-container {
