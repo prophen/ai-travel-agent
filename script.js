@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
       button.addEventListener("click", function () {
         const section = index === 0 ? "flight" : "hotel";
         console.log(`Booking ${section}...`);
-        
+
         // Change button text and style to indicate booked
         const buttonText = button.querySelector(".button-text");
         if (buttonText.textContent === "Book") {
