@@ -603,11 +603,12 @@ body {
   .screen {
     width: 100vw;
     min-height: 100vh;
-    height: 100%;
+    height: auto;
     border-radius: 0;
     border: none;
     box-shadow: none;
     overflow-y: auto;
+    padding-bottom: 80px;
   }
 
   .button-container {
@@ -651,8 +652,7 @@ body {
     transform: translateX(-50%);
     width: 90%;
     max-width: 328px;
-    top: 764px;
-    margin-bottom: 60px;
+    top: 800px;
   }
 
   .submit-button-container {
