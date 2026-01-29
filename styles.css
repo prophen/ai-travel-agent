@@ -44,6 +44,9 @@ body {
     #020617 100%
   );
   color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 .container {
@@ -582,9 +585,65 @@ body {
 
 /* Responsive adjustments */
 @media (max-width: 430px) {
+  .container {
+    padding: 0;
+    width: 100%;
+  }
+
   .screen {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     border-radius: 0;
+    border: none;
+  }
+
+  .button-container {
+    width: 100%;
+    padding: 0 24px;
+  }
+
+  .begin-button {
+    width: 100%;
+    max-width: 324px;
+  }
+
+  .image-container {
+    width: 90%;
+    max-width: 360px;
+    height: auto;
+    aspect-ratio: 1;
+  }
+
+  .form-field {
+    width: 90%;
+    max-width: 328px;
+  }
+
+  .field-input {
+    width: 100%;
+  }
+
+  .submit-button-container {
+    width: 90%;
+    max-width: 328px;
+    padding: 0;
+  }
+
+  .submit-button {
+    width: 100%;
+  }
+
+  .results-container {
+    padding: 20px;
+  }
+
+  .recommendation-item {
+    width: 100%;
+  }
+
+  .start-again-button {
+    width: 100%;
+    max-width: 328px;
   }
 }
