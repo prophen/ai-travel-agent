@@ -132,7 +132,14 @@ document.addEventListener("DOMContentLoaded", function () {
       button.addEventListener("click", function () {
         const section = index === 0 ? "flight" : "hotel";
         console.log(`Booking ${section}...`);
-        // Booking buttons don't need to do anything as per requirement
+        
+        // Change button text and style to indicate booked
+        const buttonText = button.querySelector(".button-text");
+        if (buttonText.textContent === "Book") {
+          buttonText.textContent = "Booked ✓";
+          button.classList.add("booked");
+          button.disabled = true;
+        }
       });
     });
   }
@@ -151,7 +158,7 @@ async function fetchRecommendations(tripData) {
 
   try {
     // Call the serverless API function
-    const response = await fetch("/api/recommendations", {
+    const response = await fetch("/.netlify/functions/recommendations", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -199,5 +206,16 @@ async function fetchRecommendations(tripData) {
     if (hotelText)
       hotelText.innerHTML =
         "<p>Unable to load hotel recommendations. Please try again.</p>";
+  }
+
+  // ===== START AGAIN BUTTON =====
+  const startAgainButton = document.getElementById("start-again-btn");
+
+  if (startAgainButton) {
+    startAgainButton.addEventListener("click", function () {
+      console.log("Start Again button clicked!");
+      // Navigate back to welcome screen
+      window.location.href = "index.html";
+    });
   }
 }

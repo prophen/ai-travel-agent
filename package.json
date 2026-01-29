@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "AI Travel Agent - Plan your perfect trip",
   "scripts": {
-    "dev": "vercel dev",
-    "deploy": "vercel"
+    "dev": "netlify dev",
+    "deploy": "netlify deploy"
   },
   "dependencies": {
     "openai": "^4.28.0"
