@@ -59,7 +59,7 @@ body {
 .screen {
   position: relative;
   width: 410px;
-  min-height: 844px;
+  min-height: 900px;
   background: linear-gradient(
     180deg,
     var(--surface) 0%,
