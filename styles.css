@@ -461,10 +461,12 @@ body {
   background-color: var(--surface-strong);
   border-radius: 20px;
   box-shadow: var(--shadow-soft);
-  padding: 20px 16px;
+  padding: 20px 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
   margin-bottom: 1.5rem;
   border: 1px solid var(--border-soft);
 }
@@ -612,8 +614,12 @@ body {
     padding: 0 24px;
     position: fixed;
     bottom: 40px;
+    left: 0;
     top: auto;
-    transform: translateX(-50%);
+    transform: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .begin-button {
@@ -632,10 +638,29 @@ body {
   .form-field {
     width: 90%;
     max-width: 328px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+  }
+
+  .form-field:nth-of-type(1) {
+    margin-top: 32px;
   }
 
   .field-input {
     width: 100%;
+  }
+
+  .submit-container {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 328px;
+    top: auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
   }
 
   .submit-button-container {
