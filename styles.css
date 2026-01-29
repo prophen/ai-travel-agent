@@ -603,12 +603,11 @@ body {
   .screen {
     width: 100vw;
     min-height: 100vh;
-    height: auto;
+    height: 100vh;
     border-radius: 0;
     border: none;
     box-shadow: none;
     overflow-y: auto;
-    padding-bottom: 120px;
   }
 
   .button-container {
@@ -622,6 +621,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10;
   }
 
   .begin-button {
@@ -680,11 +680,17 @@ body {
 
   .card-content {
     width: 100%;
+    padding: 20px 20px;
+  }
+
+  .card-button-container {
+    width: 100%;
+    margin-top: 14px;
   }
 
   .book-button {
     width: 100%;
-    max-width: 100%;
+    max-width: none;
     height: 47px;
   }
 
