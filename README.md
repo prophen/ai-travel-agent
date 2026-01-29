@@ -6,7 +6,7 @@ An AI-powered travel planning application that helps users discover personalized
 
 - 🤖 AI-powered travel recommendations using OpenAI API
 - 🎨 Clean, responsive design matching Figma specifications
-- 📱 Mobile-first approach (390x844px - iPhone 14/15 Pro)
+- 📱 Mobile-first approach
 - 🔄 Multi-page navigation flow
 - ✨ Interactive form with counter controls and date pickers
 - 💾 Session storage for data persistence
